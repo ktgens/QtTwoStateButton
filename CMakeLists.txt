@@ -17,3 +17,8 @@ add_executable(QtVsCodeDemo
 )
 
 target_link_libraries(QtVsCodeDemo PRIVATE Qt5::Widgets)
+
+#для иконок
+target_compile_definitions(QtVsCodeDemo PRIVATE 
+    PROJECT_ICONS_DIR="${CMAKE_CURRENT_SOURCE_DIR}/icons/"
+)
