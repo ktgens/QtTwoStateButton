@@ -16,8 +16,8 @@ int main(int argc, char *argv[]) {
     StateButton *stateButton = new StateButton(&mainWindow);
     
     //иконки с tabler.io/icons
-    QIcon onIcon(PROJECT_ICONS_DIR "lock.png");
-    QIcon offIcon(PROJECT_ICONS_DIR "lock_open.png");
+    QIcon onIcon(":/icons/lock_closed.png");
+    QIcon offIcon(":/icons/lock_open.png");
 
     stateButton->setOnIcon(onIcon);
     stateButton->setOffIcon(offIcon);

@@ -14,11 +14,8 @@ add_executable(QtVsCodeDemo
     main.cpp
     StateButton.h
     StateButton.cpp
+    resources.qrc
 )
 
 target_link_libraries(QtVsCodeDemo PRIVATE Qt5::Widgets)
 
-#для иконок
-target_compile_definitions(QtVsCodeDemo PRIVATE 
-    PROJECT_ICONS_DIR="${CMAKE_CURRENT_SOURCE_DIR}/icons/"
-)
