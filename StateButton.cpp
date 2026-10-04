@@ -3,6 +3,8 @@
 StateButton::StateButton(QWidget *parent): QToolButton(parent)
 {
     setCheckable(true);
+
+    connect(this, &QToolButton::toggled, this, &StateButton::updateButtonIcon);
 }
 
 void StateButton::setOnIcon(const QIcon &icon)
