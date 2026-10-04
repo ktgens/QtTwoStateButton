@@ -13,6 +13,7 @@ find_package(Qt5 COMPONENTS Widgets REQUIRED)
 add_executable(QtVsCodeDemo
     main.cpp
     StateButton.h
+    StateButton.cpp
 )
 
 target_link_libraries(QtVsCodeDemo PRIVATE Qt5::Widgets)
